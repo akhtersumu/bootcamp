@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", system-ui;
+    font-size: 16px;
+}
+
+.underline {
+    width: 100px;
+    height: 2px;
+    background: rgb(17, 17, 169);
+    margin: 30px auto;
+    transition: 0.5s;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    font-family: "Open Sans", system-ui;
+}
+
+p {
+    font-size: 14px;
+    color: #00000070;
+    font-family: "Open Sans", system-ui;
+}
+
+h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: "Open Sans", system-ui;
+}
+
+/*--header-section*/
+header {
+    width: 100%;
+    background: greenyellow;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.menubox {
+    display: flex;
+}
+
+.menubox h4 {
+    flex-basis: 50%;
+}
+
+.menubox li {
+    display: inline-block;
+    flex-basis: 50%;
+    margin-left: 60px;
+}
+
+.menubox li i {
+    margin-right: 8px;
+}
+
+.bottom-nav {
+    width: 100%;
+    height: 15vh;
+    background: blue;
+}
+
+.mainbox {
+    display: flex;
+}
+
+.mainbox .logo {
+    flex-basis: 50%;
+}
+
+.mainbox li {
+    display: inline-block;
+    flex-basis: 50%;
+    margin-left: 35px;
+    padding-top: 25px;
+    position: relative;
+}
+
+.mainbox li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    position: relative;
+}
+
+.mainbox a::after {
+    content: "";
+    display: block;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: 0.5s;
+}
+
+.mainbox a:hover::after {
+    width: 100%;
+}
+
+/*--banner-section-*/
+.banner-section {
+    width: 100%;
+    height: 90vh;
+    background: url(../img/banner-a.jpg)center center no-repeat;
+    background-size: cover;
+}
+
+.banner-part h1 {
+    font-size: 36px;
+    font-weight: bold;
+    padding: 50px 0px 30px;
+
+
+}
+
+.banner-part p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.btns a {
+    padding: 10px 40px;
+}
+
+.btns .btn-info {
+    color: white;
+    background: skyblue;
+    border: 2px solid white;
+    margin-top: 40px;
+    transition: 0.5s;
+}
+
+.btns .btn-info:hover {
+    color: white;
+    background: transparent;
+    border: 2px solid white;
+    margin-top: 40px;
+    transition: 0.5s;
+}
+
+/*feature--section*/
+.feature-section {
+    padding: 70px 0px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.137);
+}
+
+.feature-section h2 {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.feature-section h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+
+}
+
+.feature-section p {
+    font-size: 14px;
+    width: 95%;
+    margin-top: 15px;
+}
+
+.feature-section i {
+    font-size: 30px;
+    width: 88px;
+    height: 88px;
+    color: #008ed6;
+    border: 2px solid #008ed6;
+    border-radius: 50%;
+    padding-top: 26px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+
+}
+
+/*service-section*/
+.service-section {
+    width: 100%;
+    padding: 80px;
+    text-align: center;
+}
+
+.service-section .card {
+    background: rgba(0, 0, 0, 0.322);
+}
+
+.service-section h4 {
+    margin-top: 30px;
+}
+
+.service-section p {
+    color: #000;
+    margin-bottom: 40px;
+}
+
+.service-section h1 {
+    margin-bottom: 20px;
+}
+
+.service-section .card {
+    margin-bottom: 50px;
+}
+
+.service-section .card h4 {
+    margin-top: 30px;
+}
+
+.service-section .card p {
+    margin: 50px 0px;
+    width: 85%;
+
+}
+
+/*about-section-*/
+.about-section {
+    width: 100%;
+    padding: 80px 0px;
+    text-align: center;
+    background: #0000000f;
+}
+
+.about-section p {
+    margin: 30px;
+}
+
+.about-section h4 {
+    font-weight: bold;
+}
+
+.about-section .content {
+    margin-left: 30px;
+}
+
+.content p {
+    padding: 10px;
+    color: #000;
+}
+
+.content ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.content ul li i {
+    align-items: center;
+    font-size: 40px;
+    color: hsla(200, 86%, 48%, 0.87);
+    margin: 40px 0px;
+}
+
+/*-team-section--*/
+.slider-section {
+    width: 100%;
+    padding: 60px 0px;
+    text-align: center;
+    background: url(../img/bg.jpg)center center no-repeat;
+    background-size: cover;
+}
+
+.slider-section h2 {
+    margin-bottom: 20px;
+}
+
+.slider-section .item h4 {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+/*--contact--section*/
+.contact-section {
+    width: 100%;
+    padding: 70px 0px;
+    background: #0a4902;
+    border-bottom: 2px solid rgba(196, 186, 186, 0.881);
+}
+
+.title h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.contact-section h2 {
+    color: white;
+    margin: 25px 0px;
+}
+
+.contact-section p {
+    color: white;
+    font-size: 14px;
+    width: 80%;
+}
+
+.contact-section h6 {
+    color: white;
+}
+
+.contact-section input {
+    width: 95%;
+    font-size: 14px;
+    padding-top: 30px;
+    background: #0a4902;
+    border: none;
+    border-bottom: 1px solid #978c8c92;
+}
+
+textarea {
+    width: 95%;
+    font-size: 14px;
+    padding-top: 30px;
+    background: #0a4902;
+    border: none;
+    border-bottom: 1px solid #978c8c92;
+}
+
+/*top-footer*/
+.top-footer {
+    width: 100%;
+    padding: 70px 0px;
+    background: #030249f1;
+    border-bottom: 2px solid rgba(196, 186, 186, 0.881);
+}
+
+.top-footer h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin:0px 20px 20px 20px;
+}
+
+.top-footer ul li {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight:400;
+    color:rgba(255, 255, 255, 0.632);
+    margin-right:20px;
+    margin-bottom:5px;
+     }
+    .top-footer li i{
+        font-size: 17px;
+        margin-right:10px;
+        color:#7ffff2;
+     }
+     .main-footer{
+        width:100%;
+        padding:30px 0px;
+        background: #030249f1;
+     }
+     .main-footer p{
+        font-size:14px;
+        font-weight: 400;
+        color:rgba(255, 255, 255, 0.776);
+        text-transform: uppercase;
+     }
+   
+.copyright{
+    display: flex;
+}
+.copyright .logo{
+    flex-basis:50%;
+}
+
+.copyright p{
+    flex-basis:50%;
+    display: inline-block;
+    margin-left: 60px;
+    padding-top: 20px;
+    color:white
+}
